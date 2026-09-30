@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Мастер Алина — маникюр и педикюр, Новороссийск, Приморский район, ЖК «Мята». Онлайн-запись.">
+<title>Мастер Алина</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Jost:wght@300;400;500;600&display=swap">
+<style>
+:root{
+  --ground:#EDE8E5;
+  --paper:#F7F3F1;
+  --ink:#4B4141;
+  --ink-soft:#8C7F7D;
+  --pink:#F4BFCF;
+  --pink-deep:#D6829E;
+  --pink-ink:#4B3439;
+  --line:#DCD2CE;
+  --script:"Marck Script", "Segoe Script", "Brush Script MT", cursive;
+  --sans:"Jost", "Futura", "Segoe UI", system-ui, sans-serif;
+  --brush:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' preserveAspectRatio='none'%3E%3Cpath fill='%23F4BFCF' d='M14 22 L40 14 L62 20 L96 9 L130 17 L168 8 L204 15 L240 6 L276 14 L312 7 L350 16 L386 10 L380 30 L394 48 L384 66 L396 86 L386 104 L394 124 L382 140 L390 152 L352 146 L318 154 L282 147 L246 155 L208 148 L172 156 L136 148 L100 155 L64 147 L30 153 L8 146 L18 128 L6 110 L16 92 L4 74 L14 56 L6 38 Z'/%3E%3C/svg%3E");
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --ground:#221D1D; --paper:#2B2525; --ink:#F2EAE7; --ink-soft:#B9AAA7;
+    --pink:#F4BFCF; --pink-deep:#F0A3BC; --pink-ink:#3A2A2E; --line:#3E3534;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --ground:#221D1D; --paper:#2B2525; --ink:#F2EAE7; --ink-soft:#B9AAA7;
+  --pink:#F4BFCF; --pink-deep:#F0A3BC; --pink-ink:#3A2A2E; --line:#3E3534;
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:var(--sans);font-weight:400;font-size:17px;line-height:1.6;padding-inline:16px;padding-block:0 100px}
+.wrap{max-width:1080px;margin:0 auto}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--pink-deep);outline-offset:3px;border-radius:6px}
+h1,h2,h3{margin:0;font-weight:400;text-wrap:balance}
+.caps{font-size:13px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;line-height:1.5}
+.script{font-family:var(--script);color:var(--pink-deep);line-height:1}
+.heart{width:1em;height:1em;display:inline-block;vertical-align:-.1em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.brush{background:var(--brush) center / 100% 100% no-repeat;color:var(--pink-ink)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1fr 1.05fr;gap:40px;align-items:center;padding-block:36px 28px}
+.hero-text{display:flex;flex-direction:column;gap:22px}
+.hero-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;color:var(--ink-soft)}
+.hero h1{font-family:var(--script);color:var(--pink-deep);font-size:clamp(84px,14vw,150px);line-height:.9;transform:rotate(-6deg);transform-origin:left bottom;margin-top:10px}
+.hero h1 .pre{display:block;font-size:.4em;margin-left:.15em;margin-bottom:.05em}
+.hero h1 .sub{display:block;font-size:.42em;margin-left:1.4em;position:relative;width:max-content}
+.hero h1 .sub::after{content:"";position:absolute;left:-.3em;right:-.4em;bottom:-.12em;height:.09em;border-radius:99px;background:var(--pink-deep);transform:rotate(-3deg)}
+.hero h1 .heart{font-size:.36em;stroke-width:1.6;margin-left:.2em}
+.hero p{margin:0;color:var(--ink-soft);max-width:36ch}
+.checks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.checks li{display:flex;align-items:center;gap:12px}
+.checks svg{width:22px;height:22px;flex:none;stroke:var(--pink-deep);stroke-width:2.4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--brush) center / 100% 100% no-repeat;color:var(--pink-ink);font-family:var(--script);font-size:30px;padding:16px 44px 20px;text-decoration:none;border:0;cursor:pointer;transition:transform .2s ease}
+.btn:hover{transform:rotate(-2deg) scale(1.03)}
+.btn .heart{font-size:.7em}
+.hero-photo{margin:0;position:relative;justify-self:end;width:min(100%,520px)}
+.hero-photo img{display:block;width:100%;aspect-ratio:1;object-fit:cover;border-radius:6px;box-shadow:0 24px 50px -24px rgba(75,55,55,.45)}
+.hero-photo .tag{position:absolute;left:-28px;bottom:-26px;font-family:var(--script);font-size:26px;line-height:1.1;padding:22px 30px;transform:rotate(-7deg);max-width:230px}
+
+/* sections */
+section{padding-block:56px 16px}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:30px}
+.sec-head h2{font-family:var(--script);color:var(--pink-deep);font-size:clamp(52px,8vw,76px);transform:rotate(-3deg);transform-origin:left bottom}
+.note{color:var(--ink-soft);max-width:34ch;margin:0;text-align:right}
+
+/* prices */
+.menus{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.menu{background:var(--paper);border-radius:6px;padding:30px 30px 18px}
+.menu h3{font-family:var(--script);font-size:40px;color:var(--ink);margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.menu h3 .heart{color:var(--pink-deep);font-size:.6em}
+.row{display:grid;grid-template-columns:1fr auto;gap:2px 16px;padding-block:14px;border-top:1px solid var(--line)}
+.row b{font-weight:500;letter-spacing:.08em;text-transform:uppercase;font-size:14px}
+.row small{grid-column:1;color:var(--ink-soft);font-size:15px}
+.price{grid-row:1 / span 2;grid-column:2;align-self:center;font-weight:300;font-size:28px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.price em{font-style:normal;font-size:.6em;margin-left:4px;color:var(--pink-deep)}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;counter-reset:s}
+.step::before{counter-increment:s;content:counter(s);display:block;font-family:var(--script);font-size:64px;color:var(--pink-deep);line-height:1;margin-bottom:6px}
+.step h3{font-size:14px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px}
+.step p{margin:0;color:var(--ink-soft)}
+
+/* works */
+.works{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.work{margin:0;aspect-ratio:4/5;max-width:100%;border-radius:6px;overflow:hidden;position:relative;background:var(--paper)}
+.work img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
+.work:hover img{transform:scale(1.04)}
+.work figcaption{position:absolute;left:8px;bottom:8px;font-family:var(--script);font-size:22px;padding:8px 18px 10px;transform:rotate(-4deg)}
+.work:first-child{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+
+/* contacts */
+.contact{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:center;background:var(--paper);border-radius:6px;padding:40px}
+.contact h2{font-family:var(--script);color:var(--pink-deep);font-size:clamp(44px,7vw,64px);transform:rotate(-3deg);transform-origin:left bottom}
+.contact p{margin:14px 0 0;color:var(--ink-soft);max-width:38ch}
+.phone{font-weight:300;font-size:clamp(26px,4vw,34px);letter-spacing:.04em;color:var(--ink)!important;font-variant-numeric:tabular-nums;user-select:all}
+.links{display:flex;flex-direction:column;gap:10px}
+.links a,.links button{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:15px 20px;border:1px solid var(--line);border-radius:6px;background:transparent;color:var(--ink);text-decoration:none;font:inherit;font-size:14px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;text-align:left;transition:background .2s ease,border-color .2s ease}
+.links a:hover,.links button:hover{background:var(--pink);border-color:var(--pink);color:var(--pink-ink)}
+.links span{font-family:var(--script);text-transform:none;letter-spacing:0;font-size:22px;font-weight:400;color:var(--pink-deep)}
+.links a:hover span,.links button:hover span{color:var(--pink-ink)}
+
+footer{padding-block:40px 0;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--ink-soft)}
+footer .script{font-size:30px}
+
+.bar{position:fixed;left:0;right:0;bottom:0;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:var(--ground);border-top:1px solid var(--line);display:none;z-index:5;text-align:center}
+.bar .btn{width:100%;max-width:420px}
+
+@media (max-width:800px){
+  .hero,.menus,.contact{grid-template-columns:1fr}
+  .hero-photo{justify-self:center;margin-bottom:24px}
+  .hero-photo .tag{left:-6px;font-size:22px;padding:18px 24px}
+  .steps{grid-template-columns:1fr;gap:18px}
+  .works{grid-template-columns:repeat(2,1fr)}
+  .note{text-align:left}
+  .contact{padding:28px 22px}
+  .menu{padding:24px 20px 12px}
+  .bar{display:block}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="h" viewBox="0 0 24 24"><path d="M12 20.5c-4.2-3-8.6-6.4-8.6-10.6 0-2.6 2-4.6 4.4-4.6 1.8 0 3.3 1.1 4.2 2.8.9-1.7 2.4-2.8 4.2-2.8 2.4 0 4.4 2 4.4 4.6 0 4.2-4.4 7.6-8.6 10.6z"/></symbol>
+  <symbol id="ok" viewBox="0 0 24 24"><path d="M3 12.5c2.3 1.6 4.2 3.6 5.6 6.3C11.4 11.7 15.5 6.5 21 3"/></symbol>
+</svg>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="hero-text">
+      <div class="hero-top">
+        <span class="caps">Новороссийск<br>Приморский район<br>ЖК «Мята»</span>
+        <span class="caps" style="text-align:right">маникюр<br>и педикюр</span>
+      </div>
+      <h1><span class="pre">мастер</span>Алина<span class="sub">nails vibes<svg class="heart"><use href="#h"/></svg></span></h1>
+      <ul class="checks caps">
+        <li><svg><use href="#ok"/></svg>аккуратно</li>
+        <li><svg><use href="#ok"/></svg>нежно</li>
+        <li><svg><use href="#ok"/></svg>уютно</li>
+      </ul>
+      <p>Укрепление, однотон, френч, наращивание на типсы и педикюр с обработкой стопы. Процедура занимает от 30 минут до 2 часов.</p>
+      <div><a class="btn book" href="#" target="_blank" rel="noopener">Записаться <svg class="heart"><use href="#h"/></svg></a></div>
+    </div>
+    <figure class="hero-photo">
+      <img src="img/hero.jpg" alt="Нежный омбре-френч, работа Алины">
+      <figcaption class="tag brush">Классика, которая всегда в моде ♡</figcaption>
+    </figure>
+  </header>
+
+  <section id="price">
+    <div class="sec-head">
+      <h2>Прайс</h2>
+      <p class="note">Цены в рублях. Длительность процедуры видна при выборе услуги в записи.</p>
+    </div>
+    <div class="menus">
+      <div class="menu">
+        <h3>Маникюр <svg class="heart"><use href="#h"/></svg></h3>
+        <div class="row"><b>Без покрытия</b><span class="price">1000<em>₽</em></span></div>
+        <div class="row"><b>Укрепление + однотон</b><span class="price">1400<em>₽</em></span></div>
+        <div class="row"><b>Френч</b><small>маникюр, укрепление, дизайн</small><span class="price">1600<em>₽</em></span></div>
+        <div class="row"><b>Наращивание</b><small>типсы, укрепление, однотон</small><span class="price">2000<em>₽</em></span></div>
+        <div class="row"><b>Ремонт</b><small>за ноготь, если больше двух</small><span class="price">100<em>₽</em></span></div>
+      </div>
+      <div class="menu">
+        <h3>Педикюр <svg class="heart"><use href="#h"/></svg></h3>
+        <div class="row"><b>Без покрытия</b><small>обработка пальчиков</small><span class="price">1000<em>₽</em></span></div>
+        <div class="row"><b>Без покрытия</b><small>обработка стопы и пальчиков</small><span class="price">1300<em>₽</em></span></div>
+        <div class="row"><b>С покрытием</b><small>без обработки стопы</small><span class="price">1500<em>₽</em></span></div>
+        <div class="row"><b>С покрытием</b><small>с обработкой стопы</small><span class="price">1900<em>₽</em></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="sec-head"><h2>Как записаться</h2></div>
+    <div class="steps">
+      <div class="step"><h3>Выберите услугу</h3><p>Нажмите «Записаться» и отметьте, что будем делать.</p></div>
+      <div class="step"><h3>Возьмите время</h3><p>В календаре видны только свободные часы.</p></div>
+      <div class="step"><h3>Ждите подтверждения</h3><p>Придёт письмо с деталями, а адрес Алина пришлёт в Telegram, WhatsApp или MAX.</p></div>
+    </div>
+  </section>
+
+  <section id="works">
+    <div class="sec-head">
+      <h2>Работы</h2>
+      <p class="note">Гель-лак, френч, дизайн, наращивание и педикюр. Фото без фильтров.</p>
+    </div>
+    <div class="works">
+      <figure class="work"><img src="img/w00.jpg" alt="Френч с розовым краем"></figure>
+      <figure class="work"><img src="img/w01.jpg" alt="Работа Алины" loading="lazy"></figure>
+      <figure class="work"><img src="img/w02.jpg" alt="Работа Алины" loading="lazy"></figure>
+      <figure class="work"><img src="img/w03.jpg" alt="Маникюр до и после" loading="lazy"><figcaption class="brush">до / после</figcaption></figure>
+      <figure class="work"><img src="img/w04.jpg" alt="Работа Алины" loading="lazy"></figure>
+      <figure class="work"><img src="img/w05.jpg" alt="Работа Алины" loading="lazy"></figure>
+      <figure class="work"><img src="img/w06.jpg" alt="Работа Алины" loading="lazy"></figure>
+      <figure class="work"><img src="img/w07.jpg" alt="Работа Алины" loading="lazy"></figure>
+      <figure class="work"><img src="img/w08.jpg" alt="Работа Алины" loading="lazy"></figure>
+      <figure class="work"><img src="img/w09.jpg" alt="Работа Алины" loading="lazy"></figure>
+      <figure class="work"><img src="img/w10.jpg" alt="Работа Алины" loading="lazy"></figure>
+      <figure class="work"><img src="img/w11.jpg" alt="Маникюр до и после" loading="lazy"><figcaption class="brush">до / после</figcaption></figure>
+      <figure class="work"><img src="img/w12.jpg" alt="Работа Алины" loading="lazy"></figure>
+      <figure class="work"><img src="img/w13.jpg" alt="Работа Алины" loading="lazy"></figure>
+      <figure class="work"><img src="img/w14.jpg" alt="Работа Алины" loading="lazy"></figure>
+      <figure class="work"><img src="img/w15.jpg" alt="Работа Алины" loading="lazy"></figure>
+      <figure class="work"><img src="img/w16.jpg" alt="Работа Алины" loading="lazy"></figure>
+      <figure class="work"><img src="img/w17.jpg" alt="Маникюр до и после" loading="lazy"><figcaption class="brush">до / после</figcaption></figure>
+      <figure class="work"><img src="img/w18.jpg" alt="Работа Алины" loading="lazy"></figure>
+      <figure class="work"><img src="img/w19.jpg" alt="Работа Алины" loading="lazy"></figure>
+      <figure class="work"><img src="img/w20.jpg" alt="Работа Алины" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <section id="contacts">
+    <div class="contact">
+      <div>
+        <h2>Остались вопросы?</h2>
+        <p>Пишите в Telegram, WhatsApp или MAX по этому номеру, отвечу и помогу выбрать услугу. Принимаю в ЖК «Мята».</p>
+        <p class="phone" id="phone">+7 953 692-26-71</p>
+      </div>
+      <div class="links">
+        <a href="https://t.me/+79536922671" target="_blank" rel="noopener">Telegram <span>написать ♡</span></a>
+        <a href="https://wa.me/79536922671" target="_blank" rel="noopener">WhatsApp <span>написать ♡</span></a>
+        <a href="https://max.ru/" target="_blank" rel="noopener">MAX <span>по номеру ♡</span></a>
+        <button type="button" id="copy">Номер <span id="copyState">скопировать</span></button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span class="script">Мастер Алина ♡</span>
+    <span class="caps">маникюр и педикюр · Новороссийск, ЖК «Мята»</span>
+  </footer>
+</div>
+
+<div class="bar"><a class="btn book" href="#" target="_blank" rel="noopener">Записаться онлайн <svg class="heart"><use href="#h"/></svg></a></div>
+
+<script>
+// Ссылка на страницу записи Cal.com. Пока её нет, кнопки ведут в Telegram.
+const CAL_URL = "";
+const fallback = "https://t.me/+79536922671";
+document.querySelectorAll(".book").forEach(a => { a.href = CAL_URL || fallback; });
+
+const state = document.getElementById("copyState");
+document.getElementById("copy").addEventListener("click", () => {
+  const done = () => { state.textContent = "скопирован"; setTimeout(() => state.textContent = "скопировать", 1800); };
+  try { navigator.clipboard.writeText("+79536922671").then(done).catch(selectPhone); }
+  catch (e) { selectPhone(); }
+});
+function selectPhone(){
+  const r = document.createRange(); r.selectNodeContents(document.getElementById("phone"));
+  const s = getSelection(); s.removeAllRanges(); s.addRange(r);
+  state.textContent = "выделен";
+}
+</script>
+
+</body>
+</html>
