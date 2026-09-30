@@ -65,6 +65,15 @@ h1,h2,h3{margin:0;font-weight:400;text-wrap:balance}
 .hero-photo img{display:block;width:100%;aspect-ratio:1;object-fit:cover;border-radius:6px;box-shadow:0 24px 50px -24px rgba(75,55,55,.45)}
 .hero-photo .tag{position:absolute;left:-28px;bottom:-26px;font-family:var(--script);font-size:26px;line-height:1.1;padding:22px 30px;transform:rotate(-7deg);max-width:230px}
 
+/* cta + messengers */
+.cta{display:flex;flex-wrap:wrap;align-items:center;gap:20px 28px}
+.reach{display:flex;flex-direction:column;gap:8px;color:var(--ink-soft)}
+.reach-icons{display:flex;gap:12px}
+.ico{width:54px;height:54px;border-radius:50%;border:1.5px solid var(--pink-deep);display:grid;place-items:center;color:var(--pink-deep);text-decoration:none;transition:background .2s ease,color .2s ease,transform .2s ease}
+.ico svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.ico-text{font-family:var(--sans);font-weight:600;font-size:14px;letter-spacing:.06em}
+.ico:hover{background:var(--pink);border-color:var(--pink);color:var(--pink-ink);transform:translateY(-2px)}
+
 /* sections */
 section{padding-block:56px 16px}
 .sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:30px}
@@ -147,8 +156,18 @@ footer .script{font-size:30px}
         <li><svg><use href="#ok"/></svg>нежно</li>
         <li><svg><use href="#ok"/></svg>уютно</li>
       </ul>
-      <p>Укрепление, однотон, френч, наращивание на типсы и педикюр с обработкой стопы. Процедура занимает от 30 минут до 2 часов.</p>
-      <div><a class="btn book" href="#" target="_blank" rel="noopener">Записаться <svg class="heart"><use href="#h"/></svg></a></div>
+      <p>Укрепление, однотон, френч, наращивание на типсы и педикюр с обработкой стопы. Все процедуры занимают от 30 минут до 1,5 часа.</p>
+      <div class="cta">
+        <a class="btn book" href="#" target="_blank" rel="noopener">Записаться <svg class="heart"><use href="#h"/></svg></a>
+        <div class="reach">
+          <span class="caps">Связаться</span>
+          <div class="reach-icons">
+            <a class="ico" href="https://t.me/+79536922671" target="_blank" rel="noopener" aria-label="Написать в Telegram" title="Telegram"><svg viewBox="0 0 24 24"><path d="M21 4 3 11l6 2.2M21 4l-3.2 16-8.8-6.8M21 4 9 13.2v5.3l3-3.3"/></svg></a>
+            <a class="ico" href="https://wa.me/79536922671" target="_blank" rel="noopener" aria-label="Написать в WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24"><path d="M4 20l1.2-4A8.5 8.5 0 1 1 8 18.8L4 20z"/><path d="M9 8.5c0 3.6 2.9 6.5 6.5 6.5l1-1.6-2-1-1 1a4.2 4.2 0 0 1-2.4-2.4l1-1-1-2L9.5 8"/></svg></a>
+            <a class="ico ico-text" href="https://max.ru/" target="_blank" rel="noopener" aria-label="Написать в MAX" title="MAX">MAX</a>
+          </div>
+        </div>
+      </div>
     </div>
     <figure class="hero-photo">
       <img src="hero.jpg" alt="Нежный омбре-френч, работа Алины">
@@ -159,7 +178,7 @@ footer .script{font-size:30px}
   <section id="price">
     <div class="sec-head">
       <h2>Прайс</h2>
-      <p class="note">Цены в рублях. Длительность процедуры видна при выборе услуги в записи.</p>
+      <p class="note">Цены в рублях. Длительность процедуры зависит от сложности работы.</p>
     </div>
     <div class="menus">
       <div class="menu">
@@ -183,9 +202,9 @@ footer .script{font-size:30px}
   <section id="how">
     <div class="sec-head"><h2>Как записаться</h2></div>
     <div class="steps">
-      <div class="step"><h3>Выберите услугу</h3><p>Нажмите «Записаться» и отметьте, что будем делать.</p></div>
-      <div class="step"><h3>Возьмите время</h3><p>В календаре видны только свободные часы.</p></div>
-      <div class="step"><h3>Ждите подтверждения</h3><p>Придёт письмо с деталями, а адрес Алина пришлёт в Telegram, WhatsApp или MAX.</p></div>
+      <div class="step"><h3>Выберите услугу</h3><p>Нажмите «Записаться» и выберите нужную услугу.</p></div>
+      <div class="step"><h3>Выберите время</h3><p>В календаре отметьте свободное и удобное для вас время.</p></div>
+      <div class="step"><h3>Заполните анкету</h3><p>Укажите имя и почту, а также номер телефона и удобный мессенджер для связи.</p></div>
     </div>
   </section>
 
